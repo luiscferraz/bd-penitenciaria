@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <MER>
 	<Informacoes>
-		<Posicao Left="0" Top="0"/>
-		<TotalItens Valor="711"/>
+		<Posicao Left="0" Top="709"/>
+		<TotalItens Valor="716"/>
 		<Tipo Valor="CONCEITUAL"/>
 		<Versao Valor="2.0.0"/>
 		<Autor Valor=""/>
@@ -2822,15 +2822,15 @@
       <Especializacoes ehEsp="0"/>
     </Entidade>
     <Entidade nome="setor" id="420">
-      <Left Valor="807"/>
+      <Left Valor="808"/>
       <Top Valor="798"/>
-      <Width Valor="54"/>
-      <Height Valor="87"/>
+      <Width Valor="53"/>
+      <Height Valor="96"/>
       <Fonte default="-1"/>
       <Atributos>
         <Atributo nome="nome" id="421">
-          <Left Valor="713"/>
-          <Top Valor="862"/>
+          <Left Valor="714"/>
+          <Top Valor="874"/>
           <Width Valor="59"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -2861,8 +2861,8 @@
           </Ligacoes>
         </Atributo>
         <Atributo nome="localizacao" id="427">
-          <Left Valor="683"/>
-          <Top Valor="850"/>
+          <Left Valor="684"/>
+          <Top Valor="862"/>
           <Width Valor="89"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -2893,8 +2893,8 @@
           </Ligacoes>
         </Atributo>
         <Atributo nome="responsavel" id="619">
-          <Left Valor="676"/>
-          <Top Valor="814"/>
+          <Left Valor="677"/>
+          <Top Valor="826"/>
           <Width Valor="96"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -2925,8 +2925,8 @@
           </Ligacoes>
         </Atributo>
         <Atributo nome="telefone" id="622">
-          <Left Valor="698"/>
-          <Top Valor="838"/>
+          <Left Valor="699"/>
+          <Top Valor="850"/>
           <Width Valor="74"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -2957,8 +2957,8 @@
           </Ligacoes>
         </Atributo>
         <Atributo nome="id" id="672">
-          <Left Valor="735"/>
-          <Top Valor="826"/>
+          <Left Valor="736"/>
+          <Top Valor="838"/>
           <Width Valor="37"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -2998,8 +2998,8 @@
       <AutoRelacoes AutoRelacionado="0"/>
       <Especializacoes ehEsp="-1">
         <Especializacao nome="Esp_1" id="533">
-          <Left Valor="838"/>
-          <Top Valor="905"/>
+          <Left Valor="827"/>
+          <Top Valor="904"/>
           <Width Valor="25"/>
           <Height Valor="31"/>
           <Fonte default="0">
@@ -6063,7 +6063,7 @@
           <Cardinalidades Cardinalidade="4">
             <Cardinalidade nome="" id="697">
               <Left Valor="861"/>
-              <Top Valor="826"/>
+              <Top Valor="831"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -6208,7 +6208,7 @@
           <MostraCardinalidade Valor="-1" Card_id="718"/>
           <Cardinalidades Cardinalidade="4">
             <Cardinalidade nome="" id="718">
-              <Left Valor="769"/>
+              <Left Valor="770"/>
               <Top Valor="795"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
@@ -6455,7 +6455,7 @@
           <MostraCardinalidade Valor="-1" Card_id="765"/>
           <Cardinalidades Cardinalidade="4">
             <Cardinalidade nome="" id="765">
-              <Left Valor="843"/>
+              <Left Valor="842"/>
               <Top Valor="783"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
@@ -6603,6 +6603,79 @@
             <Cardinalidade nome="" id="793">
               <Left Valor="708"/>
               <Top Valor="174"/>
+              <Width Valor="40"/>
+              <Height Valor="20"/>
+              <Fonte default="-1"/>
+              <Atributos/>
+              <AtributosOcultos/>
+              <Dicionario></Dicionario>
+              <Nula Valor="0"/>
+              <Observacao></Observacao>
+              <Futuro></Futuro>
+              <Anexos/>
+              <Cor Valor="15780518"/>
+              <TamAuto Valor="-1"/>
+              <Tipo Valor="0"/>
+              <TextAlin Valor="0"/>
+              <Card Valor="4"/>
+              <Fixa Valor="0"/>
+              <Ligacoes/>
+            </Cardinalidade>
+          </Cardinalidades>
+          <Orientacao Valor="0"/>
+          <Fraca Valor="0"/>
+        </Ligacao>
+      </Ligacoes>
+    </Relacao>
+    <Relacao nome="contem" id="794">
+      <Left Valor="289"/>
+      <Top Valor="463"/>
+      <Width Valor="102"/>
+      <Height Valor="51"/>
+      <Fonte default="-1"/>
+      <Atributos/>
+      <AtributosOcultos/>
+      <Dicionario></Dicionario>
+      <Nula Valor="0"/>
+      <Observacao></Observacao>
+      <Futuro></Futuro>
+      <Anexos/>
+      <SetaDirecao Valor="0"/>
+      <Ligacoes>
+        <Ligacao Destino_ID="154">
+          <MostraCardinalidade Valor="-1" Card_id="795"/>
+          <Cardinalidades Cardinalidade="4">
+            <Cardinalidade nome="" id="795">
+              <Left Valor="152"/>
+              <Top Valor="353"/>
+              <Width Valor="40"/>
+              <Height Valor="20"/>
+              <Fonte default="-1"/>
+              <Atributos/>
+              <AtributosOcultos/>
+              <Dicionario></Dicionario>
+              <Nula Valor="0"/>
+              <Observacao></Observacao>
+              <Futuro></Futuro>
+              <Anexos/>
+              <Cor Valor="15780518"/>
+              <TamAuto Valor="-1"/>
+              <Tipo Valor="0"/>
+              <TextAlin Valor="0"/>
+              <Card Valor="4"/>
+              <Fixa Valor="0"/>
+              <Ligacoes/>
+            </Cardinalidade>
+          </Cardinalidades>
+          <Orientacao Valor="0"/>
+          <Fraca Valor="0"/>
+        </Ligacao>
+        <Ligacao Destino_ID="420">
+          <MostraCardinalidade Valor="-1" Card_id="796"/>
+          <Cardinalidades Cardinalidade="4">
+            <Cardinalidade nome="" id="796">
+              <Left Valor="770"/>
+              <Top Valor="807"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
