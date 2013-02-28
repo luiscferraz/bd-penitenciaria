@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <MER>
 	<Informacoes>
-		<Posicao Left="649" Top="721"/>
+		<Posicao Left="0" Top="656"/>
 		<TotalItens Valor="758"/>
 		<Tipo Valor="CONCEITUAL"/>
 		<Versao Valor="2.0.0"/>
@@ -7006,7 +7006,7 @@
         </Ligacao>
         <Ligacao Destino_ID="564">
           <MostraCardinalidade Valor="-1" Card_id="918"/>
-          <Cardinalidades Cardinalidade="4">
+          <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="918">
               <Left Valor="1142"/>
               <Top Valor="1136"/>
@@ -7024,7 +7024,7 @@
               <TamAuto Valor="-1"/>
               <Tipo Valor="0"/>
               <TextAlin Valor="0"/>
-              <Card Valor="4"/>
+              <Card Valor="3"/>
               <Fixa Valor="0"/>
               <Ligacoes/>
             </Cardinalidade>
