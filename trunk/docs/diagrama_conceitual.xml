@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <MER>
 	<Informacoes>
-		<Posicao Left="0" Top="492"/>
-		<TotalItens Valor="758"/>
+		<Posicao Left="0" Top="410"/>
+		<TotalItens Valor="744"/>
 		<Tipo Valor="CONCEITUAL"/>
 		<Versao Valor="2.0.0"/>
 		<Autor Valor=""/>
@@ -1288,7 +1288,7 @@
       <Atributos>
         <Atributo nome="setor" id="127">
           <Left Valor="75"/>
-          <Top Valor="1083"/>
+          <Top Valor="1090"/>
           <Width Valor="57"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -1320,7 +1320,7 @@
         </Atributo>
         <Atributo nome="orgão_vinculado" id="130">
           <Left Valor="11"/>
-          <Top Valor="1068"/>
+          <Top Valor="1076"/>
           <Width Valor="121"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -1352,7 +1352,7 @@
         </Atributo>
         <Atributo nome="cargo" id="133">
           <Left Valor="73"/>
-          <Top Valor="993"/>
+          <Top Valor="992"/>
           <Width Valor="59"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -1384,7 +1384,7 @@
         </Atributo>
         <Atributo nome="data_ingresso" id="136">
           <Left Valor="24"/>
-          <Top Valor="1008"/>
+          <Top Valor="1006"/>
           <Width Valor="108"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -1416,7 +1416,7 @@
         </Atributo>
         <Atributo nome="horario_expediente" id="139">
           <Left Valor="0"/>
-          <Top Valor="1053"/>
+          <Top Valor="1062"/>
           <Width Valor="139"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -1448,7 +1448,7 @@
         </Atributo>
         <Atributo nome="situação" id="145">
           <Left Valor="57"/>
-          <Top Valor="1038"/>
+          <Top Valor="1048"/>
           <Width Valor="75"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -1480,7 +1480,7 @@
         </Atributo>
         <Atributo nome="matrícula" id="151">
           <Left Valor="51"/>
-          <Top Valor="1023"/>
+          <Top Valor="1034"/>
           <Width Valor="81"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -1504,6 +1504,38 @@
           <Ligacoes>
             <Ligacao Destino_ID="71">
               <MostraCardinalidade Valor="0" Card_id="153"/>
+              <Cardinalidades Cardinalidade="4"/>
+              <Orientacao Valor="0"/>
+              <Fraca Valor="0"/>
+            </Ligacao>
+          </Ligacoes>
+        </Atributo>
+        <Atributo nome="data_saida" id="1034">
+          <Left Valor="42"/>
+          <Top Valor="1020"/>
+          <Width Valor="90"/>
+          <Height Valor="16"/>
+          <Fonte default="-1"/>
+          <Atributos/>
+          <AtributosOcultos/>
+          <Dicionario></Dicionario>
+          <Nula Valor="0"/>
+          <Observacao></Observacao>
+          <Futuro></Futuro>
+          <Anexos/>
+          <MaxCard Valor="1"/>
+          <MinCard Valor="1"/>
+          <Composto Valor="0"/>
+          <Identificador Valor="0"/>
+          <Tipo Valor="Texto(1)"/>
+          <Multivalorado Valor="0"/>
+          <Orientacao Valor="2"/>
+          <TamAuto Valor="-1"/>
+          <Desvio Valor="10"/>
+          <BarraID Valor="1035"/>
+          <Ligacoes>
+            <Ligacao Destino_ID="71">
+              <MostraCardinalidade Valor="0" Card_id="1036"/>
               <Cardinalidades Cardinalidade="4"/>
               <Orientacao Valor="0"/>
               <Fraca Valor="0"/>
@@ -3484,7 +3516,7 @@
       <Atributos>
         <Atributo nome="quantidade" id="600">
           <Left Valor="1177"/>
-          <Top Valor="1169"/>
+          <Top Valor="1174"/>
           <Width Valor="91"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -3516,7 +3548,7 @@
         </Atributo>
         <Atributo nome="tipo" id="603">
           <Left Valor="1177"/>
-          <Top Valor="1182"/>
+          <Top Valor="1185"/>
           <Width Valor="49"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -3548,7 +3580,7 @@
         </Atributo>
         <Atributo nome="id_produto" id="609">
           <Left Valor="1177"/>
-          <Top Valor="1156"/>
+          <Top Valor="1152"/>
           <Width Valor="89"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -3578,58 +3610,9 @@
             </Ligacao>
           </Ligacoes>
         </Atributo>
-      </Atributos>
-      <AtributosOcultos/>
-      <Dicionario></Dicionario>
-      <Nula Valor="0"/>
-      <Observacao></Observacao>
-      <Futuro></Futuro>
-      <Anexos/>
-      <AutoRelacoes AutoRelacionado="0"/>
-      <Especializacoes ehEsp="0"/>
-    </Entidade>
-    <Entidade nome="pedido" id="625">
-      <Left Valor="1333"/>
-      <Top Valor="942"/>
-      <Width Valor="57"/>
-      <Height Valor="65"/>
-      <Fonte default="-1"/>
-      <Atributos>
-        <Atributo nome="id" id="628">
-          <Left Valor="1425"/>
-          <Top Valor="947"/>
-          <Width Valor="37"/>
-          <Height Valor="16"/>
-          <Fonte default="-1"/>
-          <Atributos/>
-          <AtributosOcultos/>
-          <Dicionario></Dicionario>
-          <Nula Valor="0"/>
-          <Observacao></Observacao>
-          <Futuro></Futuro>
-          <Anexos/>
-          <MaxCard Valor="1"/>
-          <MinCard Valor="1"/>
-          <Composto Valor="0"/>
-          <Identificador Valor="-1"/>
-          <Tipo Valor="Texto(1)"/>
-          <Multivalorado Valor="0"/>
-          <Orientacao Valor="3"/>
-          <TamAuto Valor="-1"/>
-          <Desvio Valor="10"/>
-          <BarraID Valor="629"/>
-          <Ligacoes>
-            <Ligacao Destino_ID="625">
-              <MostraCardinalidade Valor="0" Card_id="630"/>
-              <Cardinalidades Cardinalidade="4"/>
-              <Orientacao Valor="0"/>
-              <Fraca Valor="0"/>
-            </Ligacao>
-          </Ligacoes>
-        </Atributo>
-        <Atributo nome="id_fornecedor" id="631">
-          <Left Valor="1425"/>
-          <Top Valor="986"/>
+        <Atributo nome="id_fornecedor" id="1037">
+          <Left Valor="1177"/>
+          <Top Valor="1163"/>
           <Width Valor="106"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -3649,74 +3632,10 @@
           <Orientacao Valor="3"/>
           <TamAuto Valor="-1"/>
           <Desvio Valor="10"/>
-          <BarraID Valor="632"/>
+          <BarraID Valor="1038"/>
           <Ligacoes>
-            <Ligacao Destino_ID="625">
-              <MostraCardinalidade Valor="0" Card_id="633"/>
-              <Cardinalidades Cardinalidade="4"/>
-              <Orientacao Valor="0"/>
-              <Fraca Valor="0"/>
-            </Ligacao>
-          </Ligacoes>
-        </Atributo>
-        <Atributo nome="id_produto" id="634">
-          <Left Valor="1425"/>
-          <Top Valor="960"/>
-          <Width Valor="89"/>
-          <Height Valor="16"/>
-          <Fonte default="-1"/>
-          <Atributos/>
-          <AtributosOcultos/>
-          <Dicionario></Dicionario>
-          <Nula Valor="0"/>
-          <Observacao></Observacao>
-          <Futuro></Futuro>
-          <Anexos/>
-          <MaxCard Valor="1"/>
-          <MinCard Valor="1"/>
-          <Composto Valor="0"/>
-          <Identificador Valor="0"/>
-          <Tipo Valor="Texto(1)"/>
-          <Multivalorado Valor="0"/>
-          <Orientacao Valor="3"/>
-          <TamAuto Valor="-1"/>
-          <Desvio Valor="10"/>
-          <BarraID Valor="635"/>
-          <Ligacoes>
-            <Ligacao Destino_ID="625">
-              <MostraCardinalidade Valor="0" Card_id="636"/>
-              <Cardinalidades Cardinalidade="4"/>
-              <Orientacao Valor="0"/>
-              <Fraca Valor="0"/>
-            </Ligacao>
-          </Ligacoes>
-        </Atributo>
-        <Atributo nome="data" id="637">
-          <Left Valor="1425"/>
-          <Top Valor="973"/>
-          <Width Valor="53"/>
-          <Height Valor="16"/>
-          <Fonte default="-1"/>
-          <Atributos/>
-          <AtributosOcultos/>
-          <Dicionario></Dicionario>
-          <Nula Valor="0"/>
-          <Observacao></Observacao>
-          <Futuro></Futuro>
-          <Anexos/>
-          <MaxCard Valor="1"/>
-          <MinCard Valor="1"/>
-          <Composto Valor="0"/>
-          <Identificador Valor="0"/>
-          <Tipo Valor="Texto(1)"/>
-          <Multivalorado Valor="0"/>
-          <Orientacao Valor="3"/>
-          <TamAuto Valor="-1"/>
-          <Desvio Valor="10"/>
-          <BarraID Valor="638"/>
-          <Ligacoes>
-            <Ligacao Destino_ID="625">
-              <MostraCardinalidade Valor="0" Card_id="639"/>
+            <Ligacao Destino_ID="564">
+              <MostraCardinalidade Valor="0" Card_id="1039"/>
               <Cardinalidades Cardinalidade="4"/>
               <Orientacao Valor="0"/>
               <Fraca Valor="0"/>
@@ -4303,41 +4222,9 @@
       <Height Valor="66"/>
       <Fonte default="-1"/>
       <Atributos>
-        <Atributo nome="id_preso" id="810">
-          <Left Valor="1159"/>
-          <Top Valor="549"/>
-          <Width Valor="76"/>
-          <Height Valor="16"/>
-          <Fonte default="-1"/>
-          <Atributos/>
-          <AtributosOcultos/>
-          <Dicionario></Dicionario>
-          <Nula Valor="0"/>
-          <Observacao></Observacao>
-          <Futuro></Futuro>
-          <Anexos/>
-          <MaxCard Valor="1"/>
-          <MinCard Valor="1"/>
-          <Composto Valor="0"/>
-          <Identificador Valor="0"/>
-          <Tipo Valor="Texto(1)"/>
-          <Multivalorado Valor="0"/>
-          <Orientacao Valor="3"/>
-          <TamAuto Valor="-1"/>
-          <Desvio Valor="10"/>
-          <BarraID Valor="811"/>
-          <Ligacoes>
-            <Ligacao Destino_ID="809">
-              <MostraCardinalidade Valor="0" Card_id="812"/>
-              <Cardinalidades Cardinalidade="4"/>
-              <Orientacao Valor="0"/>
-              <Fraca Valor="0"/>
-            </Ligacao>
-          </Ligacoes>
-        </Atributo>
         <Atributo nome="data_saida" id="813">
           <Left Valor="1159"/>
-          <Top Valor="588"/>
+          <Top Valor="584"/>
           <Width Valor="90"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -4369,7 +4256,7 @@
         </Atributo>
         <Atributo nome="duracao" id="816">
           <Left Valor="1159"/>
-          <Top Valor="562"/>
+          <Top Valor="552"/>
           <Width Valor="73"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -4401,7 +4288,7 @@
         </Atributo>
         <Atributo nome="data_entrada" id="819">
           <Left Valor="1159"/>
-          <Top Valor="575"/>
+          <Top Valor="568"/>
           <Width Valor="105"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -5101,7 +4988,7 @@
       <Ligacoes>
         <Ligacao Destino_ID="71">
           <MostraCardinalidade Valor="-1" Card_id="577"/>
-          <Cardinalidades Cardinalidade="1">
+          <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="577">
               <Left Valor="229"/>
               <Top Valor="971"/>
@@ -5119,7 +5006,7 @@
               <TamAuto Valor="-1"/>
               <Tipo Valor="0"/>
               <TextAlin Valor="0"/>
-              <Card Valor="1"/>
+              <Card Valor="3"/>
               <Fixa Valor="0"/>
               <Ligacoes/>
             </Cardinalidade>
@@ -5204,7 +5091,7 @@
           <MostraCardinalidade Valor="-1" Card_id="643"/>
           <Cardinalidades Cardinalidade="4">
             <Cardinalidade nome="" id="643">
-              <Left Valor="757"/>
+              <Left Valor="752"/>
               <Top Valor="614"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
@@ -5483,7 +5370,7 @@
           <MostraCardinalidade Valor="-1" Card_id="715"/>
           <Cardinalidades Cardinalidade="4">
             <Cardinalidade nome="" id="715">
-              <Left Valor="781"/>
+              <Left Valor="771"/>
               <Top Valor="614"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
@@ -5629,7 +5516,7 @@
           <MostraCardinalidade Valor="-1" Card_id="764"/>
           <Cardinalidades Cardinalidade="4">
             <Cardinalidade nome="" id="764">
-              <Left Valor="805"/>
+              <Left Valor="809"/>
               <Top Valor="614"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
@@ -6830,34 +6717,6 @@
       <Anexos/>
       <SetaDirecao Valor="0"/>
       <Ligacoes>
-        <Ligacao Destino_ID="625">
-          <MostraCardinalidade Valor="-1" Card_id="908"/>
-          <Cardinalidades Cardinalidade="4">
-            <Cardinalidade nome="" id="908">
-              <Left Valor="1361"/>
-              <Top Valor="927"/>
-              <Width Valor="40"/>
-              <Height Valor="20"/>
-              <Fonte default="-1"/>
-              <Atributos/>
-              <AtributosOcultos/>
-              <Dicionario></Dicionario>
-              <Nula Valor="0"/>
-              <Observacao></Observacao>
-              <Futuro></Futuro>
-              <Anexos/>
-              <Cor Valor="15780518"/>
-              <TamAuto Valor="-1"/>
-              <Tipo Valor="0"/>
-              <TextAlin Valor="0"/>
-              <Card Valor="4"/>
-              <Fixa Valor="0"/>
-              <Ligacoes/>
-            </Cardinalidade>
-          </Cardinalidades>
-          <Orientacao Valor="0"/>
-          <Fraca Valor="0"/>
-        </Ligacao>
         <Ligacao Destino_ID="448">
           <MostraCardinalidade Valor="-1" Card_id="909"/>
           <Cardinalidades Cardinalidade="3">
@@ -6931,34 +6790,6 @@
           <Orientacao Valor="0"/>
           <Fraca Valor="0"/>
         </Ligacao>
-        <Ligacao Destino_ID="625">
-          <MostraCardinalidade Valor="-1" Card_id="912"/>
-          <Cardinalidades Cardinalidade="4">
-            <Cardinalidade nome="" id="912">
-              <Left Valor="1295"/>
-              <Top Valor="959"/>
-              <Width Valor="40"/>
-              <Height Valor="20"/>
-              <Fonte default="-1"/>
-              <Atributos/>
-              <AtributosOcultos/>
-              <Dicionario></Dicionario>
-              <Nula Valor="0"/>
-              <Observacao></Observacao>
-              <Futuro></Futuro>
-              <Anexos/>
-              <Cor Valor="15780518"/>
-              <TamAuto Valor="-1"/>
-              <Tipo Valor="0"/>
-              <TextAlin Valor="0"/>
-              <Card Valor="4"/>
-              <Fixa Valor="0"/>
-              <Ligacoes/>
-            </Cardinalidade>
-          </Cardinalidades>
-          <Orientacao Valor="0"/>
-          <Fraca Valor="0"/>
-        </Ligacao>
       </Ligacoes>
     </Relacao>
     <Relacao nome="contem" id="916">
@@ -6976,40 +6807,12 @@
       <Anexos/>
       <SetaDirecao Valor="0"/>
       <Ligacoes>
-        <Ligacao Destino_ID="625">
-          <MostraCardinalidade Valor="-1" Card_id="917"/>
-          <Cardinalidades Cardinalidade="4">
-            <Cardinalidade nome="" id="917">
-              <Left Valor="1361"/>
-              <Top Valor="1008"/>
-              <Width Valor="40"/>
-              <Height Valor="20"/>
-              <Fonte default="-1"/>
-              <Atributos/>
-              <AtributosOcultos/>
-              <Dicionario></Dicionario>
-              <Nula Valor="0"/>
-              <Observacao></Observacao>
-              <Futuro></Futuro>
-              <Anexos/>
-              <Cor Valor="15780518"/>
-              <TamAuto Valor="-1"/>
-              <Tipo Valor="0"/>
-              <TextAlin Valor="0"/>
-              <Card Valor="4"/>
-              <Fixa Valor="0"/>
-              <Ligacoes/>
-            </Cardinalidade>
-          </Cardinalidades>
-          <Orientacao Valor="0"/>
-          <Fraca Valor="0"/>
-        </Ligacao>
         <Ligacao Destino_ID="564">
           <MostraCardinalidade Valor="-1" Card_id="918"/>
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="918">
               <Left Valor="1142"/>
-              <Top Valor="1136"/>
+              <Top Valor="1134"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -7098,6 +6901,79 @@
               <Tipo Valor="0"/>
               <TextAlin Valor="0"/>
               <Card Valor="3"/>
+              <Fixa Valor="0"/>
+              <Ligacoes/>
+            </Cardinalidade>
+          </Cardinalidades>
+          <Orientacao Valor="0"/>
+          <Fraca Valor="0"/>
+        </Ligacao>
+      </Ligacoes>
+    </Relacao>
+    <Relacao nome="tem" id="1022">
+      <Left Valor="442"/>
+      <Top Valor="877"/>
+      <Width Valor="102"/>
+      <Height Valor="51"/>
+      <Fonte default="-1"/>
+      <Atributos/>
+      <AtributosOcultos/>
+      <Dicionario></Dicionario>
+      <Nula Valor="0"/>
+      <Observacao></Observacao>
+      <Futuro></Futuro>
+      <Anexos/>
+      <SetaDirecao Valor="0"/>
+      <Ligacoes>
+        <Ligacao Destino_ID="71">
+          <MostraCardinalidade Valor="-1" Card_id="1023"/>
+          <Cardinalidades Cardinalidade="4">
+            <Cardinalidade nome="" id="1023">
+              <Left Valor="292"/>
+              <Top Valor="1034"/>
+              <Width Valor="40"/>
+              <Height Valor="20"/>
+              <Fonte default="-1"/>
+              <Atributos/>
+              <AtributosOcultos/>
+              <Dicionario></Dicionario>
+              <Nula Valor="0"/>
+              <Observacao></Observacao>
+              <Futuro></Futuro>
+              <Anexos/>
+              <Cor Valor="15780518"/>
+              <TamAuto Valor="-1"/>
+              <Tipo Valor="0"/>
+              <TextAlin Valor="0"/>
+              <Card Valor="4"/>
+              <Fixa Valor="0"/>
+              <Ligacoes/>
+            </Cardinalidade>
+          </Cardinalidades>
+          <Orientacao Valor="0"/>
+          <Fraca Valor="0"/>
+        </Ligacao>
+        <Ligacao Destino_ID="33">
+          <MostraCardinalidade Valor="-1" Card_id="1024"/>
+          <Cardinalidades Cardinalidade="4">
+            <Cardinalidade nome="" id="1024">
+              <Left Valor="790"/>
+              <Top Valor="614"/>
+              <Width Valor="40"/>
+              <Height Valor="20"/>
+              <Fonte default="-1"/>
+              <Atributos/>
+              <AtributosOcultos/>
+              <Dicionario></Dicionario>
+              <Nula Valor="0"/>
+              <Observacao></Observacao>
+              <Futuro></Futuro>
+              <Anexos/>
+              <Cor Valor="15780518"/>
+              <TamAuto Valor="-1"/>
+              <Tipo Valor="0"/>
+              <TextAlin Valor="0"/>
+              <Card Valor="4"/>
               <Fixa Valor="0"/>
               <Ligacoes/>
             </Cardinalidade>
