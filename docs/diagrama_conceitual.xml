@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <MER>
 	<Informacoes>
-		<Posicao Left="0" Top="731"/>
-		<TotalItens Valor="756"/>
+		<Posicao Left="716" Top="731"/>
+		<TotalItens Valor="760"/>
 		<Tipo Valor="CONCEITUAL"/>
 		<Versao Valor="2.0.0"/>
 		<Autor Valor=""/>
@@ -3515,8 +3515,8 @@
       <Fonte default="-1"/>
       <Atributos>
         <Atributo nome="descrição" id="603">
-          <Left Valor="1183"/>
-          <Top Valor="1190"/>
+          <Left Valor="1149"/>
+          <Top Valor="1183"/>
           <Width Valor="81"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -3547,8 +3547,8 @@
           </Ligacoes>
         </Atributo>
         <Atributo nome="id" id="609">
-          <Left Valor="1183"/>
-          <Top Valor="1160"/>
+          <Left Valor="1149"/>
+          <Top Valor="1150"/>
           <Width Valor="37"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -3579,8 +3579,8 @@
           </Ligacoes>
         </Atributo>
         <Atributo nome="id_fornecedor" id="1037">
-          <Left Valor="1183"/>
-          <Top Valor="1175"/>
+          <Left Valor="1149"/>
+          <Top Valor="1172"/>
           <Width Valor="106"/>
           <Height Valor="16"/>
           <Fonte default="-1"/>
@@ -3604,6 +3604,38 @@
           <Ligacoes>
             <Ligacao Destino_ID="564">
               <MostraCardinalidade Valor="0" Card_id="1039"/>
+              <Cardinalidades Cardinalidade="4"/>
+              <Orientacao Valor="0"/>
+              <Fraca Valor="0"/>
+            </Ligacao>
+          </Ligacoes>
+        </Atributo>
+        <Atributo nome="nome" id="1457">
+          <Left Valor="1149"/>
+          <Top Valor="1161"/>
+          <Width Valor="59"/>
+          <Height Valor="16"/>
+          <Fonte default="-1"/>
+          <Atributos/>
+          <AtributosOcultos/>
+          <Dicionario></Dicionario>
+          <Nula Valor="0"/>
+          <Observacao></Observacao>
+          <Futuro></Futuro>
+          <Anexos/>
+          <MaxCard Valor="1"/>
+          <MinCard Valor="1"/>
+          <Composto Valor="0"/>
+          <Identificador Valor="0"/>
+          <Tipo Valor="Texto(1)"/>
+          <Multivalorado Valor="0"/>
+          <Orientacao Valor="3"/>
+          <TamAuto Valor="-1"/>
+          <Desvio Valor="10"/>
+          <BarraID Valor="1458"/>
+          <Ligacoes>
+            <Ligacao Destino_ID="564">
+              <MostraCardinalidade Valor="0" Card_id="1459"/>
               <Cardinalidades Cardinalidade="4"/>
               <Orientacao Valor="0"/>
               <Fraca Valor="0"/>
@@ -6851,7 +6883,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="918">
               <Left Valor="1114"/>
-              <Top Valor="1134"/>
+              <Top Valor="1132"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
