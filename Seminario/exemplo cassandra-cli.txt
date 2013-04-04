@@ -1,0 +1,30 @@
+create keyspace lab1;
+
+use lab1;
+
+create column family pessoas with 
+comparator=UTF8Type and default_validation_class=UTF8Type and 
+key_validation_class=UTF8Type and column_metadata=[
+{column_name: tipo, validation_class: UTF8Type, index_type: KEYS},
+{column_name: idade, validation_class: LongType, index_type: KEYS}];
+
+set pessoas[rodrigo][tipo]='aluno';
+set pessoas[rodrigo][idade]='23';
+set pessoas[erick][tipo]='aluno';
+set pessoas[erick][idade]='22';
+set pessoas[josino][tipo]='professor';
+set pessoas[josino][idade]='25';
+set pessoas[josino][cpf]='1234';
+
+get pessoas where idade = '22';
+get pessoas where tipo = 'professor';
+get pessoas where tipo = 'aluno' and idade > '21';
+
+get pessoas where cpf = '1234';
+*erro*;
+
+update column family pessoas with column_metadata=[{column_name: cpf, validation_class: UTF8Type, index_type: KEYS}];
+
+get pessoas where cpf = '1234';
+
+
