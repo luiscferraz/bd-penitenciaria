@@ -1,0 +1,63 @@
+python cqlsh -2 localhost 9160
+
+create keyspace lab2 with strategy_class = 'SimpleStrategy' and strategy_options:replication_factor=1;
+
+use lab2;
+
+create columnfamily pessoas (
+key varchar PRIMARY KEY,
+tipo varchar,
+idade int,
+cpf int
+);
+
+create index on pessoas (idade);
+create index on pessoas (tipo);
+
+insert into pessoas (key, tipo, idade) VALUES ('rodrigo', 'aluno', 23);
+insert into pessoas (key, tipo, idade) VALUES ('erick', 'aluno', 22);
+insert into pessoas (key, tipo, idade, cpf) VALUES ('josino', 'professor', 25, 1234567);
+
+select * from pessoas where idade = 22;
+select * from pessoas where tipo = 'professor';
+select * from pessoas where tipo = 'aluno' and idade > 22;
+
+
+
+
+
+Instalação:
+
+Install Python 2.7.3
+
+    http://www.python.org/download/releases/2.7.3/
+
+
+Add python.exe to PATH
+
+    Start > right-click Computer > Properties > Advc. system settings > Env. variables
+    Under "System variables" double-click "Path"
+    Append ";C:\Python27" to the value (make sure it's the dir you've installed into)
+
+
+Download Python thrift module
+
+    http://pypi.python.org/pypi/thrift
+    Install extracted module "python setup.py install"
+
+
+Download Cassandra source (same version as your server is running)
+
+    http://cassandra.apache.org/download/
+
+
+Install Python cql module
+
+    Extract whole directory apache-cassandra-x.x.x.tar.gz/pylib/
+    Install extracted module "python setup.py install"
+
+
+Get cqlsh script from Cassandra source
+
+    Extract file apache-cassandra-x.x.x.tar.gz/bin/cqlsh
+    Run "python cqlsh localhost 9160"
