@@ -1,5 +1,5 @@
 INSERT INTO `genpen`.`penitenciaria` (`nome`,`tipo`,`orgao`,`sigla`,`cnpj`,`responsavel`,`seguranca`,`telefone`,`id_endereco`) VALUES
-('PENITENCIARIA FEDERAL RURAL DE PERNAMBUCO','CADEIA PÚBLICA','SDSPE','PFRPE','65.447.541/0001-08','JOSINO RODRIGUES','MÁXIMA','8133399000','1');
+('PENITENCIARIA FEDERAL RURAL DE PERNAMBUCO','CADEIA PÚBLICA','SDSPE','PFRPE','65.447.541/0001-08','JOSINO RODRIGUES','MÁXIMA','8133399000','101');
 
 --
 INSERT INTO `genpen`.`endereco` (`rua`,`numero`,`complemento`,`bairro`,`cidade`,`estado`,`pais`,`cep`) VALUES
@@ -306,5 +306,18 @@ INSERT INTO `genpen`.`preso` (`nome`,`cpf`,`rg`,`sexo`,`cor_pelo`,`tipo_sanguine
 ('ÉTER SULFÚRICO AMAZONINO RIOS','43897076649','66121620','M','BRANCO','A-','BRASILEIRO','1982-12-31','SURDO','98'),
 ('EXCELSA TERESINHA DO MENINO JESUS E SILVA','87466130665','66759689','M','MESTIÇO','A+','BRASILEIRO','1982-12-25','NDA','99'),
 ('FARAÓ DO EGITO SOUSA','51315804264','31241073','M','PARDO','A-','BRASILEIRO','1954-11-29','NDA','100');
+
+--
+INSERT INTO `genpen`.`cela` (`capacidade`,`cubagem`,`area`,`diametro`,`localizacao`) VALUES
+('5','27','9','12','PAVILHAO A'),
+('5','27','9','12','PAVILHAO A'),
+('5','27','9','12','PAVILHAO A'),
+('5','27','9','12','PAVILHAO A'),
+('10','36','16','24','PAVILHAO B'),
+('10','36','16','24','PAVILHAO B'),
+('10','36','16','24','PAVILHAO B'),
+('10','36','16','24','PAVILHAO B'),
+('15','42','24','36','PAVILHAO C'),
+('15','42','24','36','PAVILHAO C');
 
 
