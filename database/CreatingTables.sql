@@ -118,7 +118,7 @@ CREATE TABLE `genpen`.`funcionario` (
   `nome_mae` varchar(50) DEFAULT NULL,
   `nome_pai` varchar(50) DEFAULT NULL,
   `rg` bigint(10) UNIQUE NOT NULL,
-  `nacionaliade` varchar(50) NOT NULL,
+  `nacionalidade` varchar(50) NOT NULL,
   `uf_nascimento` varchar(19) NOT NULL,
   `orgao_expeditor` varchar(30) NOT NULL,
   `estado_civil` varchar(15) NOT NULL,
