@@ -15,15 +15,15 @@ USE `genpen` ;
 --
 
 CREATE TABLE `genpen`.`endereco` (
-  `id` int(6) NOT NULL AUTO_INCREMENT,
-  `rua` varchar(100) DEFAULT NULL,
-  `numero` varchar(6) DEFAULT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `rua` varchar(50) NOT NULL,
+  `numero` varchar(6) NOT NULL,
   `complemento` varchar(100)DEFAULT NULL,
-  `bairro` varchar(50) DEFAULT NULL,
+  `bairro` varchar(50) NOT NULL,
   `cidade` varchar(50) NOT NULL,
   `estado` varchar(2) NOT NULL,
   `pais` varchar(50) NOT NULL,
-  `cep` int(8) DEFAULT NULL,
+  `cep` int(8) NOT NULL,
   PRIMARY KEY (`id`)
 );
 
@@ -32,15 +32,15 @@ CREATE TABLE `genpen`.`endereco` (
 -- Estrutura da tabela `penitenciaria`
 
 CREATE TABLE `genpen`.`penitenciaria` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
   `tipo` varchar(30) NOT NULL,
   `orgao` varchar(50) NOT NULL,
   `sigla` varchar(50) NOT NULL,
-  `cnpj` int(14) UNIQUE NOT NULL,
+  `cnpj` bigint(14) UNIQUE NOT NULL,
   `responsavel` varchar(50) NOT NULL,
-  `seguranca` varchar(30) DEFAULT NULL ,
-  `telefone` int(11) NOT NULL,
+  `seguranca` varchar(30) NOT NULL ,
+  `telefone` bigint(11) NOT NULL,
   `id_endereco` int(6) NOT NULL,
   PRIMARY KEY (`id`),
    CONSTRAINT `FK_penitenciaria_endereco` FOREIGN KEY (`id_endereco`) REFERENCES `endereco` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
@@ -49,14 +49,14 @@ CREATE TABLE `genpen`.`penitenciaria` (
 -- Estrutura da tabela `preso`
 
 CREATE TABLE `genpen`.`preso` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
-  `cpf` int(11) UNIQUE NOT NULL,
+  `cpf` bigint(11) UNIQUE NOT NULL,
   `rg` int(8) UNIQUE NOT NULL,
-  `sexo` ENUM('M','F') DEFAULT NULL,
-  `cor_pele` varchar(10) DEFAULT NULL,
+  `sexo` ENUM('M','F') NOT NULL,
+  `cor_pele` varchar(10) NOT NULL,
   `tipo_sanguineo` varchar(7) DEFAULT NULL,
-  `nacionalidade` varchar(20) DEFAULT NULL,
+  `nacionalidade` varchar(20) NOT NULL,
   `data_nascimento` date NOT NULL,
   `observacoes` varchar(50) DEFAULT NULL,
   `id_endereco` int(6) NOT NULL,
@@ -67,10 +67,10 @@ CREATE TABLE `genpen`.`preso` (
 -- Estrutura da tabela `fornecedor`
 
 CREATE TABLE `genpen`.`fornecedor` (
-  `id` int(9) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
-  `cnpj` int(11) UNIQUE NOT NULL,
-  `telefone` int(11) DEFAULT NULL,
+  `cnpj` bigint(11) UNIQUE NOT NULL,
+  `telefone` bigint(11) NOT NULL,
   `id_endereco` int(6) NOT NULL,
   PRIMARY KEY (`id`),
   CONSTRAINT `FK_fornecedor_endereco` FOREIGN KEY (`id_endereco`) REFERENCES `endereco` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
@@ -78,29 +78,29 @@ CREATE TABLE `genpen`.`fornecedor` (
 -- Estrutura da tabela `advogado`
 
 CREATE TABLE `genpen`.`advogado` (
-  `registro_oab` int(10) NOT NULL,
+  `registro_oab` int(7) NOT NULL,
   `uf_oab` varchar(50) NOT NULL,
   `nome` varchar(50) NOT NULL,
-  `tipo` varchar(30) DEFAULT NULL,
+  `tipo` varchar(30) NOT NULL,
   PRIMARY KEY (`registro_oab`)
 );
 
 -- Estrutura da tabela `cela`
 
 CREATE TABLE `genpen`.`cela` (
-  `id` int(10) NOT NULL ,
+  `id` int(5) NOT NULL ,
   `capacidade` int(3) NOT NULL,
-  `cubagem` int(3) DEFAULT NULL,
-  `area` int(3) DEFAULT NULL,
-  `diametro` int(3) DEFAULT NULL,
-  `localizacao` varchar(20) DEFAULT NULL,
+  `cubagem` int(3) NOT NULL,
+  `area` int(3) NOT NULL,
+  `diametro` int(3) NOT NULL,
+  `localizacao` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
 );
 
 -- Estrutura da tabela `crime`
 
 CREATE TABLE `genpen`.`crime` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `artigo` varchar(50) NOT NULL,
   `paragrafo` varchar(50) NOT NULL,
   `pena` int(3) NOT NULL,
@@ -110,22 +110,22 @@ CREATE TABLE `genpen`.`crime` (
 -- Estrutura da tabela `funcionario`
 
 CREATE TABLE `genpen`.`funcionario` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `cpf` int(10) UNIQUE NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `cpf` bigint(10) UNIQUE NOT NULL,
   `nome` varchar(50) NOT NULL,
   `data_nascimento` date NOT NULL,
-  `sexo`ENUM('M','F') DEFAULT NULL,
+  `sexo`ENUM('M','F') NOT NULL,
   `nome_mae` varchar(50) DEFAULT NULL,
   `nome_pai` varchar(50) DEFAULT NULL,
-  `rg` int(10) UNIQUE NOT NULL,
-  `nacionaliade` varchar(50) DEFAULT NULL,
-  `uf_nascimento` varchar(19) DEFAULT NULL,
-  `orgao_expeditor` varchar(30) DEFAULT NULL,
-  `estado_civil` varchar(15) DEFAULT NULL,
+  `rg` bigint(10) UNIQUE NOT NULL,
+  `nacionaliade` varchar(50) NOT NULL,
+  `uf_nascimento` varchar(19) NOT NULL,
+  `orgao_expeditor` varchar(30) NOT NULL,
+  `estado_civil` varchar(15) NOT NULL,
   `email` varchar(40) DEFAULT NULL,
-  `telefone` int(11) DEFAULT NULL,
-  `naturalidade` varchar(50) DEFAULT NULL,
-  `id_endereco` int(6) DEFAULT NULL,
+  `telefone` bigint(11) DEFAULT NULL,
+  `naturalidade` varchar(50) NOT NULL,
+  `id_endereco` int(6) NOT NULL,
   PRIMARY KEY (`id`),
   CONSTRAINT `FK_funcionario_endereco` FOREIGN KEY (`id_endereco`) REFERENCES `endereco` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
 );
@@ -138,7 +138,7 @@ CREATE TABLE `genpen`.`dados_funcionais` (
   `cargo` varchar(30) NOT NULL,
   `data_ingresso` date NOT NULL,
   `data_saida` date DEFAULT NULL,
-  `situacao` varchar(15) DEFAULT NULL,
+  `situacao` varchar(15) NOT NULL,
   `horario_expediente` varchar(20) NOT NULL,
   `orgao_vinculado` int(7) DEFAULT NULL,
   `setor` varchar(30) NOT NULL,
@@ -148,10 +148,10 @@ CREATE TABLE `genpen`.`dados_funcionais` (
 
 -- Estrutura da tabela `Setor`
 CREATE TABLE `genpen`.`setor` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `matricula_responsavel` int(10) NOT NULL,
-  `telefone` varchar(11) DEFAULT NULL,
-  `localizacao` varchar(20) DEFAULT NULL,
+  `telefone` bigint(11) DEFAULT NULL,
+  `localizacao` varchar(20) NOT NULL,
   `nome` varchar(20) NOT NULL,
   `departamento` ENUM('enfermaria','almoxarifado', 'lavanderia', 'apoio_didatico') NOT NULL,
   PRIMARY KEY (`id`),
@@ -163,9 +163,9 @@ CREATE TABLE `genpen`.`setor` (
 -- Estrutura da tabela `ficha_social`
 
 CREATE TABLE `genpen`.`ficha_social` (
-  `id_preso` int(10) NOT NULL AUTO_INCREMENT,
-  `estado_civil` varchar(20) DEFAULT NULL,
-  `gestante` varchar(1) DEFAULT NULL,
+  `id_preso` int NOT NULL AUTO_INCREMENT,
+  `estado_civil` varchar(20) NOT NULL,
+  `gestante` varchar(1) NOT NULL,
   `necessidades_especiais` varchar(20) DEFAULT NULL,
   `grau_instrucao` varchar(20) DEFAULT NULL,
   `religiao` varchar(20) DEFAULT NULL,
@@ -190,7 +190,7 @@ CREATE TABLE `genpen`.`prontuario` (
 -- Estrutura da tabela `parente`
 
 CREATE TABLE `genpen`.`parente` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
   `data_nascimento` date DEFAULT NULL,
   `tipo_parentesco` varchar(15) NOT NULL,
@@ -220,7 +220,7 @@ CREATE TABLE `genpen`.`biometria` (
 -- Estrutura da tabela `pena`
 
 CREATE TABLE `genpen`.`pena` (
-  `id_preso` int(10) NOT NULL,
+  `id_preso` int(7) NOT NULL,
   `data_entrada` date NOT NULL,
   `data_saida` date NULL,
   PRIMARY KEY (`id_preso`,`data_entrada`),
@@ -230,8 +230,8 @@ CREATE TABLE `genpen`.`pena` (
 -- Estrutura da tabela `visita`
 
 CREATE TABLE `genpen`.`visita` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `id_preso` int(10) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `id_preso` int(7) NOT NULL,
   `data` date NOT NULL,
   `duracao` time NOT NULL,
   `id_parente` int(10) NULL,
@@ -243,8 +243,8 @@ CREATE TABLE `genpen`.`visita` (
 -- Estrutura da tabela `roupa`
 
 CREATE TABLE `genpen`.`roupa` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `id_preso` int(10) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `id_preso` int(7) NOT NULL,
   `descricao` varchar(20) NOT NULL,
   PRIMARY KEY (`id`),
   CONSTRAINT `FK_roupa_preso` FOREIGN KEY (`id_preso`) REFERENCES `preso` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
@@ -254,7 +254,7 @@ CREATE TABLE `genpen`.`roupa` (
 -- Estrutura da tabela `entrada_lavanderia`
 
 CREATE TABLE `genpen`.`entrada_lavanderia` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `status` varchar(10) NOT NULL,
   `data_entrega` date NOT NULL,
   `data_saida` date DEFAULT NULL,
@@ -271,13 +271,13 @@ CREATE TABLE `genpen`.`entrada_lavanderia` (
 -- Estrutura da tabela `entrada_enfermaria`
 
 CREATE TABLE `genpen`.`entrada_enfermaria` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `id_preso` int(10) NOT NULL, 
-  `id_enfermaria` int(10) NOT NULL, 
-  `status` varchar(10) DEFAULT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `id_preso` int(7) NOT NULL, 
+  `id_enfermaria` int(7) NOT NULL, 
+  `status` varchar(10) NOT NULL,
   `data_entrada` date NOT NULL,
   `data_saida` date DEFAULT NULL,
-  `matricula_medico` int(10) NOT NULL,
+  `matricula_medico` int(7) NOT NULL,
   `diagnostico_entrega` varchar(30) NOT NULL,
   `diagnostico_saida` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -289,7 +289,7 @@ CREATE TABLE `genpen`.`entrada_enfermaria` (
 -- Estrutura da tabela `entrada_apoio`
 
 CREATE TABLE `genpen`.`entrada_apoio` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `id_preso` int(10) NOT NULL, 
   `id_apoio_didatico` int(10) NOT NULL, 
   `tipo_apoio` varchar(10) NOT NULL,
@@ -306,7 +306,7 @@ CREATE TABLE `genpen`.`entrada_apoio` (
 -- Estrutura da tabela `produto`
 
 CREATE TABLE `genpen`.`produto` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `descricao` varchar(11) NOT NULL,
   `quantidade` int(10) NOT NULL,
   PRIMARY KEY (`id`)
@@ -315,7 +315,7 @@ CREATE TABLE `genpen`.`produto` (
 -- Estrutura da tabela `entrada_almoxarifado`
 
 CREATE TABLE `genpen`.`entrada_almoxarifado` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `id_produto` int(10) NOT NULL, 
   `id_almoxarifado` int(10) NOT NULL, 
   `id_fornecedor` int(10) NOT NULL, 
