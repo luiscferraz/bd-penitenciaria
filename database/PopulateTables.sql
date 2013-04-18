@@ -1258,6 +1258,37 @@ INSERT INTO `genpen`.`entrada_lavanderia` (`status`,`data_entrega`,`data_saida`,
 ('CONCLUIDA','2011-11-29','2012-11-29','LINDULFO CELIDONIO ','LINDULFO CELIDONIO ','65','3'),
 ('CONCLUIDA','2012-03-09','2013-03-09','LYNILDES CARAPUNFADA','LYNILDES CARAPUNFADA','13','2');
 
+--
+INSERT INTO `genpen`.`apoio_didatico` (`id_preso`,`id_apoio_didatico`,`tipo_apoio`,`data_entrada`,`matricula_instrutor`) VALUES
+('2','3','MEDIO','2013-12-30','4500900'),
+('16','2','BASICO','2012-12-31','4500900'),
+('65','2','BASICO','2012-12-25','4500900'),
+('39','1','MEDIO','2011-11-29','4500900'),
+('5','1','MEDIO','2012-03-09','4500900'),
+('43','2','MEDIO','2012-12-30','4500900'),
+('48','1','MEDIO','2012-12-31','4500900'),
+('53','3','MEDIO','2012-12-25','4500900'),
+('62','1','BASICO','2011-11-29','4500900'),
+('73','3','BASICO','2012-03-09','4500900'),
+('67','1','MEDIO','2012-12-30','4500900'),
+('4','3','BASICO','2012-12-31','4500900'),
+('38','3','BASICO','2012-12-25','4500900'),
+('39','3','MEDIO','2011-11-29','4500900'),
+('92','1','MEDIO','2012-03-09','4500900'),
+('87','1','BASICO','2012-12-30','4500900'),
+('32','3','BASICO','2012-12-31','4500900'),
+('33','1','BASICO','2012-12-25','4500900'),
+('29','3','MEDIO','2011-11-29','4500900'),
+('1','3','BASICO','2012-03-09','4500900');
+
+--
+INSERT INTO `genpen`.`setor` (`matricula_responsavel`,`telefone`,`localizacao`,`nome`,`departamento`) VALUES
+('1319543','8133393300','QUADRANTE 1','ENFERMARIA1','enfermaria'),
+('4180696','8133393301','TERREO','LAVANDERIA1','lavanderia'),
+('9464707','8133393302','QUADRANTE 1','ALMOXARIFADO1','almoxarifado'),
+('4500900','8133393303','TERREO','APOIO1','apoio_didatico');
+
+
 
 
 
