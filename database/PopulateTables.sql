@@ -1266,7 +1266,7 @@ INSERT INTO `genpen`.`entrada_lavanderia` (`status`,`data_entrega`,`data_saida`,
 ('CONCLUIDA','2012-03-09','2013-03-09','LYNILDES CARAPUNFADA','LYNILDES CARAPUNFADA','13','1');
 
 --
-INSERT INTO `genpen`.`apoio_didatico` (`id_preso`,`id_apoio_didatico`,`tipo_apoio`,`data_entrada`,`matricula_instrutor`) VALUES
+INSERT INTO `genpen`.`entrada_apoio` (`id_preso`,`id_apoio_didatico`,`tipo_apoio`,`data_entrada`,`matricula_instrutor`) VALUES
 ('2','4','MEDIO','2013-12-30','4500900'),
 ('16','4','BASICO','2012-12-31','4500900'),
 ('65','4','BASICO','2012-12-25','4500900'),
@@ -1289,7 +1289,7 @@ INSERT INTO `genpen`.`apoio_didatico` (`id_preso`,`id_apoio_didatico`,`tipo_apoi
 ('1','4','BASICO','2012-03-09','4500900');
 
 --
-INSERT INTO `genpen`.`enfermaria` (`id_preso`,`id_enfermaria`,`status`,`data_entrada`,`matricula_medico`,`diagnostico_entrega`) VALUES
+INSERT INTO `genpen`.`entrada_enfermaria` (`id_preso`,`id_enfermaria`,`status`,`data_entrada`,`matricula_medico`,`diagnostico_entrega`) VALUES
 ('2','2','INTERNADO','2013-12-30','1319543','DENGUE'),
 ('16','2','INTERNADO','2012-12-31','1319543','DENGUE'),
 ('65','2','INTERNADO','2012-12-25','1319543','DENGUE'),
@@ -1363,7 +1363,7 @@ INSERT INTO `genpen`.`entrada_almoxarifado` (`id_produto`,`id_almoxarifado`,`id_
 ('20','3','2','2012-03-09');
 
 --
-INSERT INTO `genpen`.`parente` (`nome`,`data_nascimento`,`parentesco`,`id_preso`) VALUES
+INSERT INTO `genpen`.`parente` (`nome`,`data_nascimento`,`tipo_parentesco`,`id_preso`) VALUES
 ('ABRILINA DÉCIMA NONA CAÇAPAVANA PIRATININGA','1982-12-30','IRMAO','1'),
 ('ACHEROPITA PAPAZONE','1982-12-31','IRMAO','2'),
 ('ALFIM CERQUEIRA BORGES CABRAL','1982-12-25','IRMAO','3'),
@@ -1447,19 +1447,19 @@ INSERT INTO `genpen`.`parente` (`nome`,`data_nascimento`,`parentesco`,`id_preso`
 ('JOSÉ PADRE NOSSO','1982-12-30','TIA','81'),
 ('JOSÉ TEODORO PINTO TAPADO','1982-12-31','TIO','82'),
 ('JOSÉ XIXI','1982-12-25','GATO','83'),
-('JOTACÁ DOIS MIL E UM JUANA MULA','1954-11-29','PAPAGAIO','84'),
-('JOVELINA Ó ROSA CHEIROSA','1982-03-09','CACHORRO','85'),
-('JÚLIO SANTOS PÉ-CURTO','1982-12-30','JUMENTO','86'),
-('JUSTIÇA MARIA DE JESUS','1982-12-31','PAI','87'),
-('LANÇA PERFUME RODOMETÁLICO DE ANDRADE','1982-12-25','MAE','88'),
-('LEÃO ROLANDO PEDREIRA','1954-11-29','IRMAO','89'),
-('LEDA PRAZERES AMANTE','1982-03-09','AMANTE','90'),
-('LETSGO DAQUI ','1982-12-30','EX-MULHER','91'),
-('LIBERDADE IGUALDADE','1982-12-31','FILHO','92'),
-('LIBERTINO AFRICANO NOBRE','1982-12-25','FILHA','93'),
-('LINDULFO CELIDONIO CALAFANGE DE TEFÉ','1954-11-29','NETO','94'),
-('LYNILDES CARAPUNFADA DORES FÍGADO','1982-03-09','PAI','95'),
-('MAGNÉSIA BISURADA DO PATROCÍNIO','1982-03-09','MAE','96'),
+('JOTACÁ DOIS MIL E UM JUANA MULA','1954-11-29','PAPAGAIO','1'),
+('JOVELINA Ó ROSA CHEIROSA','1982-03-09','CACHORRO','2'),
+('JÚLIO SANTOS PÉ-CURTO','1982-12-30','JUMENTO','3'),
+('JUSTIÇA MARIA DE JESUS','1982-12-31','PAI','4'),
+('LANÇA PERFUME RODOMETÁLICO DE ANDRADE','1982-12-25','MAE','5'),
+('LEÃO ROLANDO PEDREIRA','1954-11-29','IRMAO','6'),
+('LEDA PRAZERES AMANTE','1982-03-09','AMANTE','1'),
+('LETSGO DAQUI ','1982-12-30','EX-MULHER','2'),
+('LIBERDADE IGUALDADE','1982-12-31','FILHO','3'),
+('LIBERTINO AFRICANO NOBRE','1982-12-25','FILHA','1'),
+('LINDULFO CELIDONIO CALAFANGE DE TEFÉ','1954-11-29','NETO','1'),
+('LYNILDES CARAPUNFADA DORES FÍGADO','1982-03-09','PAI','9'),
+('MAGNÉSIA BISURADA DO PATROCÍNIO','1982-03-09','MAE','2'),
 ('MANGANÊS MANGANÉSFERO NACIONAL','1982-12-30','IRMAO','97'),
 ('MANOEL DE HORA PONTUAL','1982-12-31','IRMA','98'),
 ('MANOLO PORRAS Y PORRAS','1982-12-25','IRMA','99'),
@@ -1467,26 +1467,26 @@ INSERT INTO `genpen`.`parente` (`nome`,`data_nascimento`,`parentesco`,`id_preso`
 
 --
 INSERT INTO `genpen`.`visita` (`id_preso`,`data`,`duracao`,`id_parente`) VALUES
-('2',','2013-03-30','103','38'),
-('16',','2013-03-31','32','96'),
-('65',','2013-03-25','45','56'),
-('39',','2013-03-31','39','16'),
-('5',','2013-03-09','95','66'),
-('43',','2013-03-30','53','1'),
-('48',','2013-03-31','63','14'),
-('53',','2013-03-25','82','8'),
-('62',','2013-03-31','119','61'),
-('73',','2013-03-09','36','84'),
-('67',','2013-05-30','89','43'),
-('4',','2013-05-31','55','82'),
-('38',','2013-05-25','64','19'),
-('39',','2013-05-39','46','9'),
-('92',','2013-05-09','36','50'),
-('87',','2013-05-30','47','14'),
-('32',','2013-05-31','89','100'),
-('33',','2013-05-25','40','84'),
-('29',','2013-05-31','68','19'),
-('1',','2013-05-09','70','44');
+('2','2013-03-30','103','38'),
+('16','2013-03-31','32','96'),
+('65','2013-03-25','45','56'),
+('39','2013-03-31','39','16'),
+('5','2013-03-09','95','66'),
+('43','2013-03-30','53','1'),
+('48','2013-03-31','63','14'),
+('53','2013-03-25','82','8'),
+('62','2013-03-31','119','61'),
+('73','2013-03-09','36','84'),
+('67','2013-05-30','89','43'),
+('4','2013-05-31','55','82'),
+('38','2013-05-25','64','19'),
+('39','2013-05-39','46','9'),
+('92','2013-05-09','36','50'),
+('87','2013-05-30','47','14'),
+('32','2013-05-31','89','100'),
+('33','2013-05-25','40','84'),
+('29','2013-05-31','68','19'),
+('1','2013-05-09','70','44');
 
 
 
