@@ -1,0 +1,17 @@
+create keyspace laboratorio;
+
+use laboratorio;
+
+create column family pessoas with comparator=UTF8Type and default_validation_class=UTF8Type and key_validation_class=UTF8Type;
+
+set pessoas[rodrigo][tipo]='aluno';
+set pessoas[rodrigo][idade]='23';
+
+get pessoas[rodrigo];
+
+set pessoas[josino][tipo]='professor';
+set pessoas[josino][idade]='25';
+set pessoas[josino][cpf]='1234';
+
+get pessoas[josino];
+
