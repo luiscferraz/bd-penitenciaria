@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <APP>
 	<CONFIGURACAO>
-    <Configuracoes>
+    <ConfiguracoesSS>
       <dirLogico Valor="C:\Users\Rodrigo\Desktop\bd-penitenciaria\tools\"/>
       <dirConceitual Valor="C:\Users\Rodrigo\Desktop\bd-penitenciaria\tools\"/>
       <showLHint Valor="True"/>
